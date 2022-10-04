@@ -1,0 +1,37 @@
+@media screen and (min-width: 426px) {
+  body {
+    background-color: var(--Very-light-grayish-blue);
+  }
+  main {
+    width: 600px;
+    margin-inline: auto;
+    margin-block: 25px;
+    background-color: var(--White);
+    border-radius: 10px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: var(--Blue);
+  }
+  
+  .post-msg {
+    margin-inline-start: 2px;
+  }
+
+  .ntf-message:hover {
+    background-color: var(--Light-grayish-blue-2);
+    cursor: pointer;
+  }
+
+  .user-name-cl {
+    margin-inline-end: 2px;
+  }
+  
+  .chess-img {
+    margin-inline-start: auto;
+  }
+}

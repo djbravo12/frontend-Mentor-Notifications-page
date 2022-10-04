@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Media.css" />
+    <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main role="main">
+      <div class="ntf-status">
+        <span class="ntf-head">
+          Notifications
+          <span class="ntf-count" id="ntf-count"></span></span
+        ><span
+          ><button type="button" id="clear-btn">Mark all as read</button></span
+        >
+      </div>
+
+      <ul role="list">
+        <li class="ntf-list ntf-list-unread" id="list1" role="listitem">
+          <img
+            src="./assets/images/avatar-mark-webber.webp"
+            alt=""
+            class="user-image-cl"
+          />
+          <div>
+            <div class="ntf-user-details">
+              <a class="user-name-cl" href="#"> Mark Webber</a> reacted to your
+              recent post
+              <a class="post-msg" href="#"> My first tournament today!</a>
+              <i class="fa-sharp fa-solid fa-circle"></i>
+            </div>
+            <span class="ntf-timeline-details">1m ago</span>
+          </div>
+        </li>
+        <li class="ntf-list ntf-list-unread" id="list-2" role="listitem">
+          <img
+            src="./assets/images/avatar-angela-gray.webp"
+            alt=""
+            class="user-image-cl"
+          />
+          <div>
+            <div class="ntf-user-details">
+              <a href="#" class="user-name-cl"> Angela Gray</a> followed you
+              <i class="fa-sharp fa-solid fa-circle"></i>
+            </div>
+            <span class="ntf-timeline-details"> 5m ago</span>
+          </div>
+        </li>
+        <li class="ntf-list ntf-list-unread" id="list-3" role="listitem">
+          <img
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt=""
+            class="user-image-cl"
+          />
+          <div>
+            <div class="ntf-user-details">
+              <a href="#" class="user-name-cl"> Jacob Thompson</a> has joined
+              your group <a href="#" class="group-details"> Chess Club </a>
+              <i class="fa-sharp fa-solid fa-circle"></i>
+            </div>
+            <span class="ntf-timeline-details"> 1 day ago</span>
+          </div>
+        </li>
+        <li class="ntf-list" id="list-4" role="listitem">
+          <img
+            src="/assets/images/avatar-rizky-hasanuddin.webp"
+            alt=""
+            class="user-image-cl"
+          />
+          <div>
+            <div class="ntf-user-details">
+              <a href="#" class="user-name-cl"> Rizky Hasanuddin</a> sent you a
+              private message
+            </div>
+            <span class="ntf-timeline-details">
+              5 days ago
+              <div class="ntf-message">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </div>
+            </span>
+          </div>
+        </li>
+        <li class="ntf-list" id="list-5" role="listitem">
+          <img
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt=""
+            class="user-image-cl"
+          />
+          <div>
+            <div class="ntf-user-details">
+              <a href="#" class="user-name-cl"> Kimberly Smith</a> commented on
+              your picture
+            </div>
+            <span class="ntf-timeline-details"> 1 week ago</span>
+          </div>
+          <a href="#" class="chess-img"
+            ><img
+              src="./assets/images/image-chess.webp"
+              alt=""
+              class="user-image-cl user-image-cl-p"
+          /></a>
+        </li>
+        <li class="ntf-list" id="list-6" role="listitem">
+          <img
+            src="/assets/images/avatar-nathan-peterson.webp"
+            alt=""
+            class="user-image-cl"
+          />
+          <div>
+            <div class="ntf-user-details">
+              <a href="#" class="user-name-cl">Nathan Peterson</a>reacted to
+              your recent post
+              <a href="#" class="post-msg post-msg-read"
+                >5 end-game strategies to increase your win rate</a
+              >
+            </div>
+            <span class="ntf-timeline-details"> 2 weeks ago</span>
+          </div>
+        </li>
+        <li class="ntf-list" id="list-7" role="listitem">
+          <img
+            src="./assets/images/avatar-anna-kim.webp"
+            alt=""
+            class="user-image-cl"
+          />
+          <div>
+            <div class="ntf-user-details">
+              <a href="#" class="user-name-cl"> Anna Kim</a> left the group
+              <a href="#" class="group-details group-details-read">
+                Chess Club</a
+              >
+            </div>
+            <span class="ntf-timeline-details">2 weeks ago </span>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
